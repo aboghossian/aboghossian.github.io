@@ -1,9 +1,3 @@
-/* BODY */
-body {
-  margin: 0;
-  padding: 0;
-}
-
 /* NAV BAR */
 .navigation {
   display: flex;
@@ -49,10 +43,27 @@ body {
 }
 
 
-/* COVER (background) */
+/* COVER (background image) */
 .flex-cover {
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 100vh;
+  min-width: 100vh;
+  margin: auto;
+  display: block;
 
   background-image: url(img/test_background.jpg);
   background-size: cover;
+}
+
+/* background */
+.background {
+  display: flex;
+  background-color: white;
+}
+
+/* MAIN BODY */
+.flex-body {
+  margin: auto;
 }
