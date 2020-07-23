@@ -19,8 +19,9 @@ html, body {
 .navigation a {
   text-decoration: none;
   display: block;
-  padding: 1em;
+  padding: 1vw;
   color: white;
+  font-size: 1.5vw;
   font-family: "Open Sans Condensed";
 }
 
@@ -66,10 +67,61 @@ html, body {
 }
 
 .centered-header {
+  display: flex;
+  justify-content: center;
   font-family: "Open Sans Condensed";
   font-weight: normal;
-  font-size: 5em;
+  min-height: 40vh;
+  font-size: 8vw;
+  align-items: center;
   color: white;
   margin: auto;
   text-align: center;
+}
+
+.contact-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.fa-linkedin:hover {
+  background-color: #0073a4;
+}
+
+.fa-github:hover {
+  color: white;
+  background-color: black;
+}
+
+.reverse:hover{
+  color: white !important;
+}
+
+.fa-stack-overflow:hover {
+  background-color: #FF9900;
+}
+
+.fa-twitter:hover {
+  background-color: #00acee;
+}
+
+.fa:hover , .fa:active, .fa:visited, .fa:focus {
+  color: white;
+  text-decoration: none;
+}
+
+.fa {
+  text-decoration: none;
+  color: white;
+  padding: 1.5vw;
+  margin: 2vw;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition: .5s;
+  background-color: var(--c-background);
+  border-radius: 1vw;
 }
