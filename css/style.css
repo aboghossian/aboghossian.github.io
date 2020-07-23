@@ -81,7 +81,7 @@ html, body {
 
 .contact-bar {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   text-align: center;
 }
