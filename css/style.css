@@ -19,6 +19,7 @@ html, body {
   display: block;
   padding: 1em;
   color: white;
+  font-family: "Open Sans Condensed";
 }
 
 .navigation a:hover {
@@ -47,36 +48,26 @@ html, body {
   }
 }
 
-
 /* COVER (background image) */
 .background-image {
   display: flex;
+  margin-bottom: 0;
+  padding: 0;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   min-height: 100vh;
   min-width: 100vw;
   max-width: 100vw;
   max-height: 100vw;
-
   background-image: url(../img/test_background.jpg);
   background-size: cover;
 }
 
-/* background */
-.background {
-  display: flex;
-  justify-content: center;
-  background-color: white;
-}
-
-/* MAIN BODY */
-.centered-body {
-  margin: auto;
-  min-width: 100vw;
-  text-align: center;
-  color: white;
-}
-
 .centered-header {
   font-family: "Open Sans Condensed";
+  font-weight: normal;
+  font-size: 5em;
+  color: white;
+  margin: auto;
+  text-align: center;
 }
