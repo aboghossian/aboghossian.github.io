@@ -84,6 +84,18 @@ html, body {
   text-align: center;
 }
 
+.row-centered-header {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Open Sans Condensed";
+  font-weight: normal;
+  font-size: 6vw;
+  align-items: center;
+  color: black;
+  margin: auto;
+  text-align: center;
+}
+
 .contact-bar {
   display: flex;
   justify-content: center;
@@ -129,4 +141,8 @@ html, body {
   transition: .5s;
   background-color: var(--c-background);
   border-radius: 1vw;
+}
+
+.background {
+  background-color: white;
 }
