@@ -119,16 +119,24 @@ html, body {
   background-color: #FF9900;
 }
 
+.fa-untappd:hover {
+  background-color: #fbbe16;
+}
+
 .fa-twitter:hover {
   background-color: #00acee;
 }
 
-.fa:hover , .fa:active, .fa:visited, .fa:focus {
+.background {
+  background-color: white;
+}
+
+.fab:hover , .fab:active, .fab:visited, .fab:focus {
   color: white;
   text-decoration: none;
 }
 
-.fa {
+.fab {
   text-decoration: none;
   color: white;
   padding: 1.5vw;
@@ -140,8 +148,4 @@ html, body {
   transition: .5s;
   background-color: var(--c-background);
   border-radius: 1vw;
-}
-
-.background {
-  background-color: white;
 }
