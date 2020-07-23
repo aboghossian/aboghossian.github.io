@@ -13,7 +13,7 @@ html, body {
   list-style: none;
   margin: 0;
   padding: 0;
-  background: deepskyblue;
+  background: #23578b;
 }
 
 .navigation a {
@@ -30,7 +30,8 @@ html, body {
 }
 
 .navigation a:hover {
-  background: #1565C0;
+  background: #91c0e4;
+  text-decoration: underline;
 }
 
 @media all and (max-width: 800px) {
