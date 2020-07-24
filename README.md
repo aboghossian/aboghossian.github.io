@@ -1,3 +1,3 @@
 # aboghossian.me
 
-Repository for my personal website. Much to come!
+Repo for my [personal website](https://aboghossian.me/)
