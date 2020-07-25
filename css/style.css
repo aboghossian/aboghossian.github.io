@@ -1,3 +1,12 @@
+/* color definitions */
+:root {
+  --dark-blue: #16697A;
+  --medium-blue: #489FB5;
+  --light-blue: #82C0CC;
+  --light-gray: #EDE7E3;
+  --orange: #FFA62B;
+}
+
 /* overall margin and padding defaults */
 html, body {
   margin: 0;
@@ -13,7 +22,7 @@ html, body {
   list-style: none;
   margin: 0;
   padding: 0;
-  background: #23578B;
+  background: var(--medium-blue);
 }
 
 .navigation a {
@@ -32,7 +41,7 @@ html, body {
 }
 
 .navigation a:hover {
-  background: #91BAE3;
+  background: var(--light-blue);
   text-decoration: underline;
 }
 
@@ -97,7 +106,7 @@ html, body {
   margin-top: 2vw;
   text-align: center;
 
-  color: #226E56;
+  color: var(--dark-blue);
   font-size: 6vw;
   font-family: "Open Sans Condensed";
   font-weight: normal;
@@ -166,7 +175,7 @@ html, body {
 }
 
 .activity-item {
-  background: #226E56;
+  background: var(--orange);
   padding: 4vw;
   border-radius: 1vw;
   text-align: center;
@@ -188,14 +197,14 @@ html, body {
   position: absolute;
   overflow: auto;
 
-  background-color: #f9f9f9;
+  background-color: var(--light-gray);
   border-radius: 1vw;
-  box-shadow: 1vw .5vw #91BAE3;
+  box-shadow: 1vw .5vw var(--medium-blue);
 }
 
 .show {display:block;}
 
 .basic-list {
   list-style: none;
-  font-family: "Open Sans Condensed";
+  font-family: "Open Sans";
 }
