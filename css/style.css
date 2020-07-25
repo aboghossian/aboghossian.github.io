@@ -154,3 +154,24 @@ html, body {
   background-color: var(--c-background);
   border-radius: 1vw;
 }
+
+/* box container for fun page */
+.activity-box {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.activity-item {
+  background: #6a7b2d;
+  padding: 5vw;
+  border-radius: 1vw;
+  text-align: center;
+
+  color: white;
+  font-family: "Open Sans Condensed";
+  font-weight: bold;
+  font-size: 4vw;
+}
