@@ -196,6 +196,7 @@ html, body {
   display: none;
   position: absolute;
   overflow: auto;
+  margin-bottom: 3vw;
 
   background-color: var(--light-gray);
   border-radius: 1vw;
@@ -205,6 +206,21 @@ html, body {
 .show {display:block;}
 
 .basic-list {
+  margin: 0;
+  padding: 0;
+  max-width: 90vw;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: space-around;
   list-style: none;
   font-family: "Open Sans";
+}
+
+.basic-list li {
+  padding: 1vw;
+}
+
+.contained-img {
+  height: 25vw;
 }
