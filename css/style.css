@@ -13,7 +13,7 @@ html, body {
   list-style: none;
   margin: 0;
   padding: 0;
-  background: #23578b;
+  background: #23578B;
 }
 
 .navigation a {
@@ -32,7 +32,7 @@ html, body {
 }
 
 .navigation a:hover {
-  background: #91c0e4;
+  background: #91BAE3;
   text-decoration: underline;
 }
 
@@ -94,10 +94,10 @@ html, body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: auto;
+  margin-top: 2vw;
   text-align: center;
 
-  color: black;
+  color: #226E56;
   font-size: 6vw;
   font-family: "Open Sans Condensed";
   font-weight: normal;
@@ -162,16 +162,40 @@ html, body {
   flex-flow: row wrap;
   justify-content: space-around;
   list-style: none;
+  margin-top: 5vw;
 }
 
 .activity-item {
-  background: #6a7b2d;
-  padding: 5vw;
+  background: #226E56;
+  padding: 4vw;
   border-radius: 1vw;
   text-align: center;
+  cursor: pointer;
 
   color: white;
   font-family: "Open Sans Condensed";
-  font-weight: bold;
   font-size: 4vw;
+}
+
+.container-dropdown {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  overflow: auto;
+
+  background-color: #f9f9f9;
+  border-radius: 1vw;
+  box-shadow: 1vw .5vw #91BAE3;
+}
+
+.show {display:block;}
+
+.basic-list {
+  list-style: none;
+  font-family: "Open Sans Condensed";
 }

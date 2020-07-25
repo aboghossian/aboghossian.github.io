@@ -7,6 +7,7 @@
   <script src="https://kit.fontawesome.com/737137b318.js" crossorigin="anonymous"></script>
 </head>
 
+<body>
 <div class="background">
   <nav>
     <ul class="navigation">
@@ -15,17 +16,68 @@
       <li><a href="/fun">fun</a></li>
     </ul>
   </nav>
-  <body>
     <div>
       <h1 class="row-centered-header">Things I do for fun</h1>
     </div>
     <div>
       <ul class="activity-box">
-        <li class="activity-item">hiking</li>
-        <li class="activity-item">hiking</li>
-        <li class="activity-item">hiking</li>
+        <li class="activity-item" onclick="showInfo('hikingInfo')">hiking</li>
+        <li class="activity-item" onclick="showInfo('travelInfo')">travel</li>
+        <li class="activity-item" onclick="showInfo('readingInfo')">reading</li>
       </ul>
     </div>
-  </body>
+    <div class="container-dropdown">
+      <div id="hikingInfo" class="dropdown-content">
+        <ul class="basic-list">
+          <li>Test</li>
+          <li>Test</li>
+          <li>Test</li>
+          <li>Test</li>
+          <li>Test</li>
+        </ul>
+      </div>
+      <div id="travelInfo" class="dropdown-content">
+        <ul class="basic-list">
+          <li>Test2</li>
+          <li>Test2</li>
+          <li>Test2</li>
+          <li>Test2</li>
+          <li>Test2</li>
+        </ul>
+      </div>
+      <div id="readingInfo" class="dropdown-content">
+        <ul class="basic-list">
+          <li>Test3</li>
+          <li>Test3</li>
+          <li>Test3</li>
+          <li>Test3</li>
+          <li>Test3</li>
+        </ul>
+      </div>
+    </div>
 </div>
+<script>
+function closeOpenDrops() {
+  var dropdowns = document.getElementsByClassName("dropdown-content");
+  var i;
+  for (i = 0; i < dropdowns.length; i++) {
+    var openDropdown = dropdowns[i];
+    if (openDropdown.classList.contains("show")) {
+      openDropdown.classList.remove("show");
+    }
+  }
+}
+
+function showInfo(infoType) {
+  closeOpenDrops();
+  document.getElementById(infoType).classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches(".activity-item")) {
+    closeOpenDrops();
+  }
+}
+</script>
+</body>
 </html>
