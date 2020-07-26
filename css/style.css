@@ -186,6 +186,10 @@ html, body {
   font-size: 4vw;
 }
 
+.activity-item:hover {
+  background: var(--light-blue);
+}
+
 .container-dropdown {
   display: flex;
   position: relative;
