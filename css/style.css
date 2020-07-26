@@ -204,7 +204,7 @@ html, body {
 
   background-color: var(--light-gray);
   border-radius: 1vw;
-  box-shadow: 1vw .5vw var(--medium-blue);
+  box-shadow: 1vw .5vw var(--dark-blue);
 }
 
 .show {display:block;}
