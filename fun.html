@@ -23,16 +23,25 @@
     <div>
       <ul class="activity-box">
         <li class="activity-item" onclick="showInfo('hikingInfo')">hiking</li>
-        <li class="activity-item" onclick="showInfo('travelInfo')">travel</li>
-        <li class="activity-item" onclick="showInfo('readingInfo')">reading</li>
+        <li class="activity-item" onclick="showInfo('travelInfo')">other stuff</li>
+        <li class="activity-item" onclick="showInfo('readingInfo')">some more stuff</li>
       </ul>
     </div>
     <div id="myDropdown" class="container-dropdown">
       <div id="hikingInfo" class="dropdown-content">
         <ul class="basic-list">
-          <li><img src="img/colorado_lake.jpg" class="contained-img"></img></li>
-          <li><img src="img/acadia_harbor.jpg" class="contained-img"></img></li>
-          <li><img src="img/denali_moose.jpg" class="contained-img"></img></li>
+          <li class="image-wrapper">
+            <img src="img/colorado_lake.jpg" class="contained-img"></img>
+            <p class="img-description">Willow Lake, CO<br>2019</p>
+          </li>
+          <li class="image-wrapper">
+            <img src="img/acadia_harbor.jpg" class="contained-img"></img>
+            <p class="img-description">Acadia National Park, ME<br>2019</p>
+          </li>
+          <li class="image-wrapper">
+            <img src="img/denali_moose.jpg" class="contained-img"></img>
+            <p class="img-description">Denali National Park, AK<br>2015</p>
+          </li>
         </ul>
       </div>
       <div id="travelInfo" class="dropdown-content">

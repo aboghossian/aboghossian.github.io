@@ -222,9 +222,33 @@ html, body {
 }
 
 .basic-list li {
+  position: relative;
   padding: 1vw;
 }
 
 .contained-img {
   height: 25vw;
+}
+
+.img-wrapper {
+  position: relative;
+  display: flex;
+}
+
+.img-description {
+  position: absolute;
+  display: flex;
+  padding: 1vw;
+  top: 0;
+  background: var(--dark-blue);
+  opacity: 0.5;
+  visibility: hidden;
+
+  text-align: center;
+  color: white;
+  font-family: "Open Sans";
+}
+
+.image-wrapper:hover .img-description {
+  visibility: visible;
 }
