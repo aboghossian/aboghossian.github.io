@@ -5,6 +5,9 @@
   --light-blue: #82C0CC;
   --light-gray: #EDE7E3;
   --orange: #FFA62B;
+  --linkedin-blue: #0073A4;
+  --twitter-blue: #00ACEE;
+  --untappd-orange: #FBBE16;
 }
 
 /* overall margin and padding defaults */
@@ -45,6 +48,7 @@ html, body {
   text-decoration: underline;
 }
 
+/* nav bar resizing */
 @media all and (max-width: 800px) {
   .navigation {
     justify-content: space-around;
@@ -99,6 +103,7 @@ html, body {
   font-weight: normal;
 }
 
+/* other page headers */
 .row-centered-header {
   display: flex;
   justify-content: space-around;
@@ -121,11 +126,10 @@ html, body {
 }
 
 .fa-linkedin:hover {
-  background-color: #0073a4;
+  background-color: var(--linkedin-blue);
 }
 
 .fa-github:hover {
-  color: white;
   background-color: black;
 }
 
@@ -134,11 +138,11 @@ html, body {
 }
 
 .fa-untappd:hover {
-  background-color: #fbbe16;
+  background-color: var(--untappd-orange);
 }
 
 .fa-twitter:hover {
-  background-color: #00acee;
+  background-color: var(--twitter-blue);
 }
 
 .background {
@@ -190,6 +194,7 @@ html, body {
   background: var(--light-blue);
 }
 
+/* dropdown menu on fun page */
 .container-dropdown {
   display: flex;
   position: relative;
@@ -207,7 +212,9 @@ html, body {
   box-shadow: 1vw .5vw var(--dark-blue);
 }
 
-.show {display:block;}
+.show {
+  display: block;
+}
 
 .basic-list {
   margin: 0;
