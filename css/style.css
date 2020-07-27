@@ -212,7 +212,7 @@ html, body {
 .basic-list {
   margin: 0;
   padding: 0;
-  max-width: 90vw;
+  max-width: 94vw;
   display: flex;
   flex-direction: row;
   flex-flow: row wrap;
@@ -223,11 +223,11 @@ html, body {
 
 .basic-list li {
   position: relative;
-  padding: 1vw;
+  padding: 0.5vw;
 }
 
 .contained-img {
-  height: 25vw;
+  height: 22vw;
 }
 
 .img-wrapper {
@@ -238,7 +238,8 @@ html, body {
 .img-description {
   position: absolute;
   display: flex;
-  padding: 1vw;
+  padding: 0.5vw;
+  margin-top: 0.5vw;
   top: 0;
   background: var(--dark-blue);
   opacity: 0.5;
