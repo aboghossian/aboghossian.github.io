@@ -241,8 +241,10 @@ html, body {
   padding: 0.5vw;
   margin-top: 0.5vw;
   top: 0;
+  right: 0;
+  margin-right: 0.5vw;
   background: var(--dark-blue);
-  opacity: 0.5;
+  opacity: 0.75;
   visibility: hidden;
 
   text-align: center;
