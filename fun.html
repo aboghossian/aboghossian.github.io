@@ -5,30 +5,34 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans+Condensed:300,400,600,700&amp;lang=en"/>
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en"/>
-  <script src="https://kit.fontawesome.com/737137b318.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 <div class="background">
   <nav>
+    <!-- nav bar -->
     <ul class="navigation">
       <li><a href="/">home</a></li>
       <li><a href="/work">work</a></li>
       <li><a href="/fun">fun</a></li>
     </ul>
   </nav>
+    <!-- page heading -->
     <div>
       <h1 class="row-centered-header">Things I do for fun</h1>
     </div>
     <div>
+      <!-- boxes with different activities in them (clickable) -->
       <ul class="activity-box">
         <li class="activity-item" onclick="showInfo('hikingInfo')">hiking</li>
         <li class="activity-item" onclick="showInfo('travelInfo')">other stuff</li>
         <li class="activity-item" onclick="showInfo('readingInfo')">some more stuff</li>
       </ul>
     </div>
+    <!-- dropdown area with activity info -->
     <div id="myDropdown" class="container-dropdown">
       <div id="hikingInfo" class="dropdown-content">
+        <!-- images with info on hover -->
         <ul class="basic-list">
           <li class="image-wrapper">
             <img src="img/colorado_lake.jpg" class="contained-img"></img>
@@ -64,7 +68,9 @@
       </div>
     </div>
 </div>
+
 <script>
+/* closes open dropdown menus */
 function closeOpenDrops() {
   var dropdowns = document.getElementsByClassName("dropdown-content");
   var i;
@@ -76,17 +82,20 @@ function closeOpenDrops() {
   }
 }
 
-function showInfo(infoType) {
-  closeOpenDrops();
-  document.getElementById(infoType).classList.toggle("show");
-}
-
+/* click event for closing dropdowns */
 window.onclick = function(event) {
   if (!event.target.matches(".activity-item")) {
     closeOpenDrops();
   }
 }
 
+/* opens dropdown for a heading */
+function showInfo(infoType) {
+  closeOpenDrops();
+  document.getElementById(infoType).classList.toggle("show");
+}
+
+/* stops close if click in dropdown */
 document.getElementById("myDropdown").addEventListener('click',function(event){
     event.stopPropagation();
 });

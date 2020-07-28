@@ -117,7 +117,7 @@ html, body {
   font-weight: normal;
 }
 
-/* contact logos (from fontawesome)*/
+/* container for logos */
 .contact-bar {
   display: flex;
   justify-content: center;
@@ -125,6 +125,22 @@ html, body {
   text-align: center;
 }
 
+/* contact logos (from fontawesome)*/
+.fab {
+  text-decoration: none;
+  color: white;
+  padding: 1.5vw;
+  margin: 2vw;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition: .5s;
+  background-color: var(--c-background);
+  border-radius: 1vw;
+}
+
+/* hover colors for logos */
 .fa-linkedin:hover {
   background-color: var(--linkedin-blue);
 }
@@ -152,20 +168,6 @@ html, body {
 .fab:hover , .fab:active, .fab:visited, .fab:focus {
   color: white;
   text-decoration: none;
-}
-
-.fab {
-  text-decoration: none;
-  color: white;
-  padding: 1.5vw;
-  margin: 2vw;
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition: .5s;
-  background-color: var(--c-background);
-  border-radius: 1vw;
 }
 
 /* box container for fun page */
