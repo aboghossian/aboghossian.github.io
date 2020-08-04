@@ -275,11 +275,8 @@ html, body {
   display: flex;
   position: relative;
   flex: 1;
-
-  margin: 0;
-  padding: 0;
-
-  background-color: var(--light-gray);
+  overflow: auto;
+  margin-bottom: 3vw;
 }
 
 .work-container .work-item {
