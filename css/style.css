@@ -264,3 +264,26 @@ html, body {
 .image-wrapper:hover .img-description {
   visibility: visible;
 }
+
+/* work items */
+.work-container {
+  display: flex;
+}
+
+.work-container .work-item {
+  width: 50vw;
+  margin-left: 4vw;
+  text-align: left;
+}
+
+.work-container .work-item h1 {
+  font-family: "Open Sans Condensed";
+  font-weight: normal;
+  font-size: 4vw;
+}
+
+.work-container .work-item p {
+  font-family: "Open Sans";
+  font-weight: normal;
+  font-size: 1.5vw;
+}

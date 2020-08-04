@@ -17,56 +17,56 @@
       <li><a href="/fun">fun</a></li>
     </ul>
   </nav>
-    <!-- page heading -->
-    <div>
-      <h1 class="row-centered-header">Things I do for fun</h1>
-    </div>
-    <div>
-      <!-- boxes with different activities in them (clickable) -->
-      <ul class="activity-box">
-        <li class="activity-item" onclick="showInfo('hikingInfo')">hiking</li>
-        <li class="activity-item" onclick="showInfo('travelInfo')">other stuff</li>
-        <li class="activity-item" onclick="showInfo('readingInfo')">some more stuff</li>
+  <!-- page heading -->
+  <div>
+    <h1 class="row-centered-header">Things I do for fun</h1>
+  </div>
+  <div>
+    <!-- boxes with different activities in them (clickable) -->
+    <ul class="activity-box">
+      <li class="activity-item" onclick="showInfo('hikingInfo')">hiking</li>
+      <li class="activity-item" onclick="showInfo('travelInfo')">other stuff</li>
+      <li class="activity-item" onclick="showInfo('readingInfo')">some more stuff</li>
+    </ul>
+  </div>
+  <!-- dropdown area with activity info -->
+  <div id="myDropdown" class="container-dropdown">
+    <div id="hikingInfo" class="dropdown-content">
+      <!-- images with info on hover -->
+      <ul class="basic-list">
+        <li class="image-wrapper">
+          <img src="img/colorado_lake.jpg" class="contained-img"></img>
+          <p class="img-description">Willow Lake, CO<br>2019</p>
+        </li>
+        <li class="image-wrapper">
+          <img src="img/acadia_harbor.jpg" class="contained-img"></img>
+          <p class="img-description">Acadia National Park, ME<br>2019</p>
+        </li>
+        <li class="image-wrapper">
+          <img src="img/denali_moose.jpg" class="contained-img"></img>
+          <p class="img-description">Denali National Park, AK<br>2015</p>
+        </li>
       </ul>
     </div>
-    <!-- dropdown area with activity info -->
-    <div id="myDropdown" class="container-dropdown">
-      <div id="hikingInfo" class="dropdown-content">
-        <!-- images with info on hover -->
-        <ul class="basic-list">
-          <li class="image-wrapper">
-            <img src="img/colorado_lake.jpg" class="contained-img"></img>
-            <p class="img-description">Willow Lake, CO<br>2019</p>
-          </li>
-          <li class="image-wrapper">
-            <img src="img/acadia_harbor.jpg" class="contained-img"></img>
-            <p class="img-description">Acadia National Park, ME<br>2019</p>
-          </li>
-          <li class="image-wrapper">
-            <img src="img/denali_moose.jpg" class="contained-img"></img>
-            <p class="img-description">Denali National Park, AK<br>2015</p>
-          </li>
-        </ul>
-      </div>
-      <div id="travelInfo" class="dropdown-content">
-        <ul class="basic-list">
-          <li>Test2</li>
-          <li>Test2</li>
-          <li>Test2</li>
-          <li>Test2</li>
-          <li>Test2</li>
-        </ul>
-      </div>
-      <div id="readingInfo" class="dropdown-content">
-        <ul class="basic-list">
-          <li>Test3</li>
-          <li>Test3</li>
-          <li>Test3</li>
-          <li>Test3</li>
-          <li>Test3</li>
-        </ul>
-      </div>
+    <div id="travelInfo" class="dropdown-content">
+      <ul class="basic-list">
+        <li>Test2</li>
+        <li>Test2</li>
+        <li>Test2</li>
+        <li>Test2</li>
+        <li>Test2</li>
+      </ul>
     </div>
+    <div id="readingInfo" class="dropdown-content">
+      <ul class="basic-list">
+        <li>Test3</li>
+        <li>Test3</li>
+        <li>Test3</li>
+        <li>Test3</li>
+        <li>Test3</li>
+      </ul>
+    </div>
+  </div>
 </div>
 
 <script>
