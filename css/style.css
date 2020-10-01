@@ -8,6 +8,7 @@
   --linkedin-blue: #0073A4;
   --twitter-blue: #00ACEE;
   --untappd-orange: #FBBE16;
+  --strava-red: #FC4C02;
 }
 
 /* overall margin and padding defaults */
@@ -160,6 +161,10 @@ html, body {
 
 .fa-untappd:hover {
   background-color: var(--untappd-orange);
+}
+
+.fa-strava:hover {
+  background-color: var(--strava-red);
 }
 
 .fa-twitter:hover {
