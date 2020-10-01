@@ -30,21 +30,21 @@
     </ul>
   </div>
   <!-- dropdown area with activity info -->
-  <div id="myDropdown" class="container-dropdown">
+  <div id="funDropdown" class="container-dropdown">
     <div id="hikingInfo" class="dropdown-content">
       <!-- images with info on hover -->
       <ul class="basic-list">
         <li class="image-wrapper">
           <img src="img/colorado_lake.jpg" class="contained-img"></img>
-          <p class="img-description">Willow Lake, CO<br>2019</p>
+          <a class="img-description" href="https://www.alltrails.com/trail/us/colorado/willow-lake">Willow Lake, CO<br>2019</a>
         </li>
         <li class="image-wrapper">
           <img src="img/acadia_harbor.jpg" class="contained-img"></img>
-          <p class="img-description">Acadia National Park, ME<br>2019</p>
+          <a class="img-description" href="https://www.alltrails.com/trail/us/maine/jordan-cliffs-trail-to-penobscot-mountain">Acadia National Park, ME<br>2019</a>
         </li>
         <li class="image-wrapper">
           <img src="img/denali_moose.jpg" class="contained-img"></img>
-          <p class="img-description">Denali National Park, AK<br>2015</p>
+          <a class="img-description" href="https://goo.gl/maps/XsQr3WbJHr5JMGdj8">Denali National Park, AK<br>2015</a>
         </li>
       </ul>
     </div>
@@ -96,7 +96,7 @@ function showInfo(infoType) {
 }
 
 /* stops close if click in dropdown */
-document.getElementById("myDropdown").addEventListener('click',function(event){
+document.getElementById("funDropdown").addEventListener('click',function(event){
     event.stopPropagation();
 });
 </script>

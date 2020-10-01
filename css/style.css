@@ -50,7 +50,7 @@ html, body {
 }
 
 .navigation .active {
-  background: var(--dark-blue) !important;
+  background: var(--orange) !important;
 }
 
 /* nav bar resizing */
@@ -192,8 +192,8 @@ html, body {
 
 .activity-item {
   background: var(--orange);
-  padding: 4vw;
-  border-radius: 1vw;
+  padding: 2vw;
+  border-radius: .5vw;
   text-align: center;
   cursor: pointer;
 
@@ -219,9 +219,8 @@ html, body {
   overflow: auto;
   margin-bottom: 3vw;
 
-  background-color: var(--light-gray);
-  border-radius: 1vw;
-  box-shadow: 1vw .5vw var(--dark-blue);
+  background-color: white;
+  border: solid var(--light-gray);
 }
 
 .show {
@@ -269,10 +268,15 @@ html, body {
   text-align: center;
   color: white;
   font-family: "Open Sans";
+  text-decoration: none;
 }
 
 .image-wrapper:hover .img-description {
   visibility: visible;
+}
+
+.img-description:hover {
+  color: var(--orange);
 }
 
 /* work items */
