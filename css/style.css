@@ -5,6 +5,7 @@
   --light-blue: #82C0CC;
   --light-gray: #EDE7E3;
   --orange: #FFA62B;
+  --black: #333333;
   --linkedin-blue: #0073A4;
   --twitter-blue: #00ACEE;
   --untappd-orange: #FBBE16;
@@ -116,7 +117,7 @@ html, body {
   margin-top: 2vw;
   text-align: center;
 
-  color: black;
+  color: var(--black);
   font-size: 6vw;
   font-family: "Open Sans Condensed";
   font-weight: normal;
@@ -276,7 +277,9 @@ html, body {
 }
 
 .img-description:hover {
+  background-color: var(--medium-blue);
   color: var(--orange);
+  opacity: 1;
 }
 
 /* work items */
@@ -298,10 +301,12 @@ html, body {
   font-family: "Open Sans Condensed";
   font-weight: normal;
   font-size: 4vw;
+  color: var(--black);
 }
 
 .work-container .work-item p {
   font-family: "Open Sans";
   font-weight: normal;
   font-size: 1.5vw;
+  color: var(--black);
 }
