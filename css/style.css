@@ -39,14 +39,8 @@ html, body {
   font-size: 1.5vw;
   font-family: "Open Sans Condensed";
   text-decoration: none;
-
   display: block;
   padding: 1vw;
-
-  -o-transition:.1s;
-  -ms-transition:.1s;
-  -moz-transition:.1s;
-  -webkit-transition:.1s;
 }
 
 .navigation a:hover {
@@ -142,11 +136,6 @@ html, body {
   padding: 1.5vw;
   margin: 2vw;
   font-size: 2.5vw !important;
-  -o-transition:.1s;
-  -ms-transition:.1s;
-  -moz-transition:.1s;
-  -webkit-transition:.1s;
-  transition: .1s;
   background-color: var(--c-background);
   border-radius: 1vw;
 }
@@ -225,7 +214,7 @@ html, body {
   margin-bottom: 3vw;
 
   background-color: white;
-  border: solid var(--light-gray);
+  border: solid var(--medium-blue);
 }
 
 .show {
@@ -301,14 +290,14 @@ html, body {
   text-align: left;
 }
 
-.work-container .work-item h1 {
+.work-container .work-text h1 {
   font-family: "Open Sans Condensed";
   font-weight: normal;
   font-size: 4vw;
   color: var(--black);
 }
 
-.work-container .work-item p {
+.work-container .work-text p {
   font-family: "Open Sans";
   font-weight: normal;
   font-size: 1.5vw;
@@ -316,7 +305,7 @@ html, body {
 }
 
 .job-link {
-  max-height: 4vw;
+  height: 4vw;
   text-decoration: none;
   padding: .5vw;
   background-color: var(--c-background);
