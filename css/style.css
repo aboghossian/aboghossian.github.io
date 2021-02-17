@@ -12,6 +12,8 @@
   --strava-red: #FC4C02;
   --broad-blue: #05659C;
   --inv-broad-blue: #FA9A63;
+  --x-chem-green: #BBC30C;
+  --inv-xchem-green: #443CF3;
 }
 
 /* overall margin and padding defaults */
@@ -317,11 +319,6 @@ html, body {
   max-height: 4vw;
   text-decoration: none;
   padding: .5vw;
-  -o-transition:.1s;
-  -ms-transition:.1s;
-  -moz-transition:.1s;
-  -webkit-transition:.1s;
-  transition: .1s;
   background-color: var(--c-background);
   border-radius: .5vw;
 }
@@ -329,4 +326,9 @@ html, body {
 .job-broad:hover {
   -webkit-filter:invert(100%);
   background-color: var(--inv-broad-blue);
+}
+
+.job-chem:hover {
+  -webkit-filter:invert(100%);
+  background-color: var(--inv-xchem-green);
 }
