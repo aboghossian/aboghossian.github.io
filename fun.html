@@ -24,9 +24,9 @@
   <div>
     <!-- boxes with different activities in them (clickable) -->
     <ul class="activity-box">
-      <li class="activity-item" onclick="showInfo('hikingInfo')">hiking</li>
-      <li class="activity-item" onclick="showInfo('travelInfo')">other stuff</li>
-      <li class="activity-item" onclick="showInfo('readingInfo')">some more stuff</li>
+      <li id="hikingHeader" class="activity-item" onclick="showInfo('hikingInfo', 'hikingHeader')">hiking</li>
+      <li id="otherHeader" class="activity-item" onclick="showInfo('travelInfo', 'otherHeader')">other stuff</li>
+      <li id="moreHeader" class="activity-item" onclick="showInfo('readingInfo', 'moreHeader')">some more stuff</li>
     </ul>
   </div>
   <!-- dropdown area with activity info -->
@@ -86,13 +86,27 @@ function closeOpenDrops() {
 window.onclick = function(event) {
   if (!event.target.matches(".activity-item")) {
     closeOpenDrops();
+    recolorHeaders();
+  }
+}
+
+function recolorHeaders() {
+  var headers = document.getElementsByClassName("activity-item");
+  var j;
+  for (j = 0; j < headers.length; j++) {
+    var openHeader = headers[j];
+    if (openHeader.style.background == "var(--light-blue)") {
+      openHeader.style.background = "var(--orange)";
+    }
   }
 }
 
 /* opens dropdown for a heading */
-function showInfo(infoType) {
+function showInfo(infoType, headerType) {
   closeOpenDrops();
+  recolorHeaders();
   document.getElementById(infoType).classList.toggle("show");
+  document.getElementById(headerType).style.background = "var(--light-blue)";
 }
 
 /* stops close if click in dropdown */
