@@ -10,6 +10,8 @@
   --twitter-blue: #00ACEE;
   --untappd-orange: #FBBE16;
   --strava-red: #FC4C02;
+  --broad-blue: #05659C;
+  --inv-broad-blue: #FA9A63;
 }
 
 /* overall margin and padding defaults */
@@ -309,4 +311,22 @@ html, body {
   font-weight: normal;
   font-size: 1.5vw;
   color: var(--black);
+}
+
+.job-link {
+  max-height: 4vw;
+  text-decoration: none;
+  padding: .5vw;
+  -o-transition:.1s;
+  -ms-transition:.1s;
+  -moz-transition:.1s;
+  -webkit-transition:.1s;
+  transition: .1s;
+  background-color: var(--c-background);
+  border-radius: .5vw;
+}
+
+.job-broad:hover {
+  -webkit-filter:invert(100%);
+  background-color: var(--inv-broad-blue);
 }
