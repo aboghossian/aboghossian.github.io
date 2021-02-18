@@ -1,4 +1,4 @@
-/* color definitions */
+/* color definitions (variables) */
 :root {
   --dark-blue: #16697A;
   --medium-blue: #489FB5;
@@ -22,7 +22,12 @@ html, body {
   padding: 0;
 }
 
-/* NAV BAR */
+/* overall background color */
+.background {
+  background-color: white;
+}
+
+/* nav bar (along top of each page) */
 .navigation {
   display: flex;
   flex-flow: row wrap;
@@ -42,16 +47,18 @@ html, body {
   padding: 1vw;
 }
 
+/* underline and color blue on hover */
 .navigation a:hover {
   background: var(--light-blue);
   text-decoration: underline;
 }
 
+/* color current page orange */
 .navigation .active {
   background: var(--orange) !important;
 }
 
-/* nav bar resizing */
+/* nav bar resizing with window */
 @media all and (max-width: 800px) {
   .navigation {
     justify-content: space-around;
@@ -94,9 +101,9 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
+  margin-top: 10vw;
+  margin-bottom: 1vw;
   text-align: center;
-  min-height: 40vh;
   color: white;
   font-size: 8vw;
   font-family: "Open Sans Condensed";
@@ -116,6 +123,20 @@ html, body {
   font-weight: normal;
 }
 
+/* sub-headers (e.g. pronouns) */
+.centered-subheader {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin: 1vw;
+  padding: 0;
+  color: white;
+  font-size: 3vw;
+  font-family: "Open Sans Condensed";
+  font-weight: normal;
+}
+
 /* container for logos */
 .contact-bar {
   display: flex;
@@ -124,7 +145,7 @@ html, body {
   text-align: center;
 }
 
-/* contact logos (from fontawesome)*/
+/* contact logos (from fontawesome) */
 .fab {
   text-decoration: none;
   color: white;
@@ -158,10 +179,6 @@ html, body {
 
 .fa-twitter:hover {
   background-color: var(--twitter-blue);
-}
-
-.background {
-  background-color: white;
 }
 
 .fab:hover , .fab:active, .fab:visited, .fab:focus {
@@ -211,11 +228,13 @@ html, body {
   border: solid var(--medium-blue);
   font-family: "Open Sans Condensed";
   font-size: 1.5vw;
+  color: var(--black);
 }
 
 .dropdown-content h1 {
   text-align: center;
   font-weight: normal;
+  color: var(--black);
 }
 
 .show {
@@ -232,6 +251,7 @@ html, body {
   justify-content: space-around;
   list-style: none;
   font-family: "Open Sans";
+  color: var(--black);
 }
 
 .basic-list li {
@@ -292,6 +312,7 @@ html, body {
   text-align: left;
   border: solid var(--medium-blue);
   border-radius: 1vw;
+  color: var(--black);
 }
 
 .work-container .work-text h1 {
