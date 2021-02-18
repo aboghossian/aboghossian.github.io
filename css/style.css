@@ -47,10 +47,10 @@ html, body {
   padding: 1vw;
 }
 
-/* underline and color blue on hover */
+/* underline and color on hover */
 .navigation a:hover {
-  background: var(--light-blue);
-  text-decoration: underline;
+  background: var(--light-blue) !important;
+  text-decoration: underline !important;
 }
 
 /* color current page orange */
@@ -203,6 +203,7 @@ html, body {
   background: var(--orange);
   padding: 2vw;
   border-radius: .5vw;
+  box-shadow: 0.5vw 0.4vw var(--light-gray);
   text-align: center;
   cursor: pointer;
   color: white;
@@ -211,7 +212,7 @@ html, body {
 }
 
 .activity-item:hover {
-  background: var(--light-blue);
+  background: var(--light-blue) !important;
 }
 
 /* dropdown menu on fun page */
