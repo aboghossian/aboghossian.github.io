@@ -322,6 +322,10 @@ html, body {
   color: var(--black);
 }
 
+.work-container .work-text a {
+  color: var(--dark-blue);
+}
+
 .work-container .work-text p {
   font-family: "Open Sans";
   font-weight: normal;
