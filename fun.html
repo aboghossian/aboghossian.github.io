@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Andrew Boghossian</title>
+  <title>andrew boghossian - fun</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans+Condensed:300,400,600,700&amp;lang=en"/>
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en"/>
@@ -25,13 +25,14 @@
     <!-- boxes with different activities in them (clickable) -->
     <ul class="activity-box">
       <li id="hikingHeader" class="activity-item" onclick="showInfo('hikingInfo', 'hikingHeader')">hiking</li>
-      <li id="otherHeader" class="activity-item" onclick="showInfo('travelInfo', 'otherHeader')">other stuff</li>
-      <li id="moreHeader" class="activity-item" onclick="showInfo('readingInfo', 'moreHeader')">some more stuff</li>
+      <li id="readingHeader" class="activity-item" onclick="showInfo('readingInfo', 'readingHeader')">reading</li>
+      <li id="moreHeader" class="activity-item" onclick="showInfo('beerInfo', 'moreHeader')">some more stuff</li>
     </ul>
   </div>
   <!-- dropdown area with activity info -->
   <div id="funDropdown" class="container-dropdown">
     <div id="hikingInfo" class="dropdown-content">
+      <h1>Some places I've hiked recently</h1>
       <!-- images with info on hover -->
       <ul class="basic-list">
         <li class="image-wrapper">
@@ -48,16 +49,17 @@
         </li>
       </ul>
     </div>
-    <div id="travelInfo" class="dropdown-content">
+    <div id="readingInfo" class="dropdown-content">
+      <h1>Some things I've read recently</h1>
       <ul class="basic-list">
-        <li>Test2</li>
+        <li>Freedom Dreams, Robin D. G. Kelley</li>
         <li>Test2</li>
         <li>Test2</li>
         <li>Test2</li>
         <li>Test2</li>
       </ul>
     </div>
-    <div id="readingInfo" class="dropdown-content">
+    <div id="beerInfo" class="dropdown-content">
       <ul class="basic-list">
         <li>Test3</li>
         <li>Test3</li>
