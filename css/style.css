@@ -322,7 +322,11 @@ html, body {
   color: var(--black);
 }
 
-.work-container .work-text a {
+.work-container .work-text a:active {
+  color: var(--orange);
+}
+
+.work-container .work-text a:visited {
   color: var(--dark-blue);
 }
 
