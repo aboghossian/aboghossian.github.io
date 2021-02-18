@@ -19,7 +19,7 @@
   </nav>
   <!-- page heading -->
   <div>
-    <h1 class="row-centered-header">Things I do for fun</h1>
+    <h1 class="row-centered-header">Stuff that I do for fun</h1>
   </div>
   <div>
     <!-- boxes with different activities in them (clickable) -->
@@ -50,7 +50,7 @@
       </ul>
     </div>
     <div id="readingInfo" class="dropdown-content">
-      <h1>Some things I've read recently</h1>
+      <h1>Some things I've read (and liked) recently</h1>
       <ul class="basic-list">
         <li>
           <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1320445635l/90528.jpg" class="contained-img"></img>
@@ -81,6 +81,7 @@
 <script>
 /* closes open dropdown menus */
 function closeOpenDrops() {
+  /* loop through and open changed to close */
   var dropdowns = document.getElementsByClassName("dropdown-content");
   var i;
   for (i = 0; i < dropdowns.length; i++) {
@@ -99,7 +100,9 @@ window.onclick = function(event) {
   }
 }
 
+/* un-colors current header after de-select */
 function recolorHeaders() {
+  /* loop through and find changed to change back */
   var headers = document.getElementsByClassName("activity-item");
   var j;
   for (j = 0; j < headers.length; j++) {
@@ -110,7 +113,7 @@ function recolorHeaders() {
   }
 }
 
-/* opens dropdown for a heading */
+/* opens dropdown for a heading and highlights header */
 function showInfo(infoType, headerType) {
   closeOpenDrops();
   recolorHeaders();
