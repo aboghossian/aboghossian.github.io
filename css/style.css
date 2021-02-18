@@ -322,7 +322,7 @@ html, body {
   color: var(--black);
 }
 
-.work-container .work-text a:active {
+.work-container .work-text a {
   color: var(--orange);
 }
 
