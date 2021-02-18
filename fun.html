@@ -26,7 +26,9 @@
     <ul class="activity-box">
       <li id="hikingHeader" class="activity-item" onclick="showInfo('hikingInfo', 'hikingHeader')">hiking</li>
       <li id="readingHeader" class="activity-item" onclick="showInfo('readingInfo', 'readingHeader')">reading</li>
-      <li id="moreHeader" class="activity-item" onclick="showInfo('beerInfo', 'moreHeader')">some more stuff</li>
+      <li id="foodHeader" class="activity-item" onclick="showInfo('foodInfo', 'foodHeader')">cooking</li>
+      <li id="skiHeader" class="activity-item" onclick="showInfo('skiInfo', 'skiHeader')">skiing</li>
+      <li id="travelHeader" class="activity-item" onclick="showInfo('travelInfo', 'travelHeader')">travel</li>
     </ul>
   </div>
   <!-- dropdown area with activity info -->
@@ -35,6 +37,18 @@
       <h1>Some places I've hiked recently</h1>
       <!-- images with info on hover -->
       <ul class="basic-list">
+        <li class="image-wrapper">
+          <img src="img/teton.jpg" class="contained-img"></img>
+          <a class="img-description" href="https://www.alltrails.com/trail/us/wyoming/cascade-canyon-trail">Cascade Canyon, WY<br>2020</a>
+        </li>
+        <li class="image-wrapper">
+          <img src="img/glacier.jpg" class="contained-img"></img>
+          <a class="img-description" href="https://www.alltrails.com/trail/us/montana/avalanche-lake-via-the-trail-of-the-cedars">Avalanche Lake, MT<br>2020</a>
+        </li>
+        <li class="image-wrapper">
+          <img src="img/washington.jpg" class="contained-img"></img>
+          <a class="img-description" href="https://www.alltrails.com/trail/us/new-hampshire/tuckerman-ravine-trail-to-mount-washington">Mt. Washington, NH<br>2020</a>
+        </li>
         <li class="image-wrapper">
           <img src="img/colorado_lake.jpg" class="contained-img"></img>
           <a class="img-description" href="https://www.alltrails.com/trail/us/colorado/willow-lake">Willow Lake, CO<br>2019</a>
@@ -50,7 +64,7 @@
       </ul>
     </div>
     <div id="readingInfo" class="dropdown-content">
-      <h1>Some things I've read (and liked) recently</h1>
+      <h1>Some books I've read (and liked) recently</h1>
       <ul class="basic-list">
         <li>
           <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1320445635l/90528.jpg" class="contained-img"></img>
@@ -66,14 +80,14 @@
         </li>
       </ul>
     </div>
-    <div id="beerInfo" class="dropdown-content">
-      <ul class="basic-list">
-        <li>Test3</li>
-        <li>Test3</li>
-        <li>Test3</li>
-        <li>Test3</li>
-        <li>Test3</li>
-      </ul>
+    <div id="foodInfo" class="dropdown-content">
+      <h1>An assortment of dishes I've cooked recently</h1>
+    </div>
+    <div id="skiInfo" class="dropdown-content">
+      <h1>Some recent ski adventures</h1>
+    </div>
+    <div id="travelInfo" class="dropdown-content">
+      <h1>A few places I have been</h1>
     </div>
   </div>
 </div>
