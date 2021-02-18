@@ -105,6 +105,7 @@ html, body {
   margin-bottom: 1vw;
   text-align: center;
   color: white;
+  text-shadow: 1px 1px var(--black);
   font-size: 8vw;
   font-family: "Open Sans Condensed";
   font-weight: normal;
@@ -132,6 +133,7 @@ html, body {
   margin: 1vw;
   padding: 0;
   color: white;
+  text-shadow: 1px 1px var(--black);
   font-size: 3vw;
   font-family: "Open Sans Condensed";
   font-weight: normal;
@@ -148,6 +150,7 @@ html, body {
 /* contact logos (from fontawesome) */
 .fab {
   text-decoration: none;
+  text-shadow: 1px 1px var(--black);
   color: white;
   padding: 1.5vw;
   margin: 2vw;
