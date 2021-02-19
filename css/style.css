@@ -14,6 +14,8 @@
   --inv-broad-blue: #FA9A63;
   --x-chem-green: #BBC30C;
   --inv-xchem-green: #443CF3;
+  --dart-green: #00693E;
+  --inv-dart-green: #FF96C1;
 }
 
 /* overall margin and padding defaults */
@@ -303,6 +305,7 @@ html, body {
 /* work items */
 .work-container {
   display: flex;
+  flex-flow: row wrap;
   position: relative;
   flex: 1;
   overflow: auto;
@@ -310,19 +313,23 @@ html, body {
 }
 
 .work-container .work-text {
-  width: 50vw;
+  width: 43vw;
   margin: 2vw;
   padding: 1vw;
   text-align: left;
+  justify-content: flex-start;
   border: solid var(--medium-blue);
   border-radius: 1vw;
   color: var(--black);
 }
 
-.work-container .work-text h1 {
+.work-container .work-text span {
   font-family: "Open Sans Condensed";
   font-weight: normal;
-  font-size: 4vw;
+  font-size: 2.5vw;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
   color: var(--black);
 }
 
@@ -345,8 +352,8 @@ html, body {
   height: 4vw;
   text-decoration: none;
   padding: .5vw;
-  background-color: var(--c-background);
   border-radius: .5vw;
+  margin-right: 1vw;
 }
 
 .job-broad:hover {
@@ -357,4 +364,9 @@ html, body {
 .job-chem:hover {
   -webkit-filter:invert(100%);
   background-color: var(--inv-xchem-green);
+}
+
+.job-dart:hover {
+  -webkit-filter:invert(100%);
+  background-color: var(--inv-dart-green);
 }
