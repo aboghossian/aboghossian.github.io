@@ -11,6 +11,7 @@
   --untappd-orange: #FBBE16;
   --strava-red: #FC4C02;
   --broad-blue: #05659C;
+  --google-green: #0F9D58;
   --inv-broad-blue: #FA9A63;
   --x-chem-green: #BBC30C;
   --inv-xchem-green: #443CF3;
@@ -184,6 +185,10 @@ html, body {
 
 .fa-twitter:hover {
   background-color: var(--twitter-blue);
+}
+
+.fa-google:hover {
+  background-color: var(--google-green);
 }
 
 .fab:hover , .fab:active, .fab:visited, .fab:focus {
