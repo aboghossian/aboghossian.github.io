@@ -17,6 +17,8 @@
   --inv-xchem-green: #443CF3;
   --dart-green: #00693E;
   --inv-dart-green: #FF96C1;
+  --ucsf-blue: #04234B;
+  --inv-ucsf-blue: #FBDCB4;
 }
 
 /* overall margin and padding defaults */
@@ -315,12 +317,15 @@ html, body {
   flex: 1;
   overflow: auto;
   margin-bottom: 3vw;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-around;
 }
 
 .work-container .work-text {
   width: 43vw;
   margin: 2vw;
-  padding: 1vw;
+  padding: 0.5vw;
   text-align: left;
   justify-content: flex-start;
   border: solid var(--medium-blue);
@@ -359,6 +364,11 @@ html, body {
   padding: .5vw;
   border-radius: .5vw;
   margin-right: 1vw;
+}
+
+.job-ucsf:hover {
+  -webkit-filter:invert(100%);
+  background-color: var(--inv-broad-blue);
 }
 
 .job-broad:hover {
