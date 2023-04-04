@@ -19,6 +19,8 @@
   --inv-dart-green: #FF96C1;
   --ucsf-blue: #04234B;
   --inv-ucsf-blue: #FBDCB4;
+  --neurobs-blue: #677EB2;
+  --inv-neurobs-blue: #98814D;
 }
 
 /* overall margin and padding defaults */
@@ -366,9 +368,14 @@ html, body {
   margin-right: 1vw;
 }
 
+.job-neurobs:hover {
+  -webkit-filter:invert(100%);
+  background-color: var(--inv-neurobs-blue);
+}
+
 .job-ucsf:hover {
   -webkit-filter:invert(100%);
-  background-color: var(--inv-broad-blue);
+  background-color: var(--inv-ucsf-blue);
 }
 
 .job-broad:hover {
